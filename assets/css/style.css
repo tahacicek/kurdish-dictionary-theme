@@ -513,3 +513,191 @@ body.dark-theme .left-bar-content .search-bar input::placeholder {
 .left-bar-content .words .word-title span:hover {
 	color: var(--hover-color);
 }
+
+
+.word-edit-area {
+	margin-left: 300px;
+	margin-right: 300px;
+	padding: 20px;
+}
+
+.word-edit-area .word-edit .word-edit-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	padding: 4px;
+}
+
+.word-edit-area .word-edit .word-edit-header .word-edit-title {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.word-edit-area .word-edit .word-edit-header .word-edit-status .badge {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin-right: 10px;
+	/* içindeki yazıyı sil */
+	font-size: 0;
+}
+
+.word-edit-area .word-edit .word-edit-header .word-edit-status .badge.active {
+	background-color: var(--success-color);
+}
+
+.word-edit-area .word-edit .word-edit-header .word-edit-status .badge.passive {
+	background-color: var(--danger-color);
+}
+
+.word-edit-area .word-edit .word-edit-header .word-edit-status .badge.pending {
+	background-color: var(--warning-color);
+}
+
+.word-edit-area .word-edit .word-edit-header .word-edit-status .badge.unknown {
+	background-color: var(--info-color);
+}
+
+.word-edit-area .word-edit .word-edit-header .word-edit-title span {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.word-edit-area .word-edit .word-edit-header .word-edit-title span:hover {
+	color: var(--hover-color);
+}
+
+.word-edit-area .word-edit .word-edit-body .word-edit-form {
+	background-color: var(--light-theme-card);
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme .word-edit-area .word-edit .word-edit-body .word-edit-form {
+	background-color: var(--dark-theme-card);
+}
+
+.word-edit-area .word-edit .word-edit-body .word-edit-form .form-group {
+	margin-bottom: 20px;
+}
+
+.word-edit-area .word-edit .word-edit-body .word-edit-form .form-group label {
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.word-edit-area .word-edit .word-edit-body .word-edit-form .form-group input {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #e9ecef;
+	border-radius: 0px;
+	padding: 0 10px;
+	font-size: 16px;
+	font-weight: 500;
+	box-shadow: none;
+
+}
+
+.word-edit-area .word-edit .word-edit-body .word-edit-form .button-groups {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.word-edit-area .word-edit .word-edit-body .word-edit-form .button-groups .btn {
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.word-edit-area .word-edit .word-edit-body .word-edit-form .button-groups .info{
+	background-color: var(--info-color);
+	color: #fff;
+}
+
+.word-edit-area .word-edit .word-edit-body .word-edit-form .button-groups .great{
+	background-color: #6B8A7A;
+	color: #fff;
+}
+
+.word-edit-area .word-edit .word-edit-body .word-edit-form .button-groups .great:hover{
+	background-color: #6B8A7A;
+}
+
+
+
+.word-edit-area .word-edit .word-edit-body .word-edit-form .button-groups .info:hover{
+	background-color: #17a2b8;
+}
+
+.word-edit-area .word-edit .word-edit-body .word-edit-form .button-groups .success{
+	background-color: var(--success-color);
+	color: #fff;
+	/* en sona at */
+	margin-left: auto;
+}
+
+.word-edit-area .word-edit .word-edit-body .word-edit-form .button-groups .success:hover{
+	background-color: #28a745;
+}
+
+.word-edit-area .word-edit .word-edit-body .word-edit-form .button-groups .primary{
+	background-color: var(--primary-color);
+	color: #fff;
+}
+
+.word-edit-area .word-edit .word-edit-body .word-edit-form .button-groups .primary:hover{
+	background-color: #254336;
+}
+.word-edit-area .word-edit .word-edit-body .word-edit-form .form-group textarea {
+	width: 100%;
+	height: 100px;
+	border: 1px solid #e9ecef;
+	border-radius: 0px;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: 500;
+	box-shadow: none;
+}
+
+
+.word-edit-area .word-edit .word-edit-body .word-edit-footer {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.word-edit-area .word-edit .word-edit-body .word-edit-footer .btn {
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.word-edit-area .word-edit .word-edit-body .word-edit-footer .success{
+	background-color: var(--success-color);
+	color: #fff;
+}
+
+.word-edit-area .word-edit .word-edit-body .word-edit-footer .success:hover{
+	background-color: #28a745;
+}
+
+.word-edit-area .word-edit .word-edit-body .word-edit-footer .danger{
+	background-color: var(--danger-color);
+	color: #fff;
+}
+
+

@@ -68,16 +68,23 @@
                 <div class="search-bar">
                     <input type="text" class="form-control" placeholder="Search">
                     <div class="dropdown">
-                        <a class="btn p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-filter"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227z" /></svg>
+                        <a class="btn p-0" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-filter">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227z" />
+                            </svg>
                         </a>
-
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                      </div>
+                    </div>
                 </div>
                 <div class="words">
                     <div class="word">
@@ -87,7 +94,7 @@
                             </span>
                         </div>
                         <div class="word-title">
-                            <span>Çîrok</span>
+                            <span>Flower</span>
                         </div>
                     </div>
                     <div class="word">
@@ -97,7 +104,7 @@
                             </span>
                         </div>
                         <div class="word-title">
-                            <span>Çîrok</span>
+                            <span>Flower</span>
                         </div>
                     </div>
                     <div class="word">
@@ -107,7 +114,7 @@
                             </span>
                         </div>
                         <div class="word-title">
-                            <span>Çîrok</span>
+                            <span>Flower</span>
                         </div>
                     </div>
                     <div class="word">
@@ -117,17 +124,71 @@
                             </span>
                         </div>
                         <div class="word-title">
-                            <span>Çîrok</span>
+                            <span>Flower</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script src="/assets/js/bootstrap.min.js"></script>
-        <script src="/assets/js/main.js"></script>
-        <script></script>
+        <div class="word-edit-area">
+            <div class="word-edit">
+                <div class="word-edit-header">
+                    <div class="word-edit-title">
+                        <span>Flower</span>
+                    </div>
+                    <div class="word-edit-status">
+                        <span class="badge active">
+                            success
+                        </span>
+                    </div>
+                </div>
+                <div class="word-edit-body">
+                    <div class="word-edit-form">
+                        <div class="form-group">
+                            <label for="word">Kurdish (Kurmanji)</label>
+                            <textarea type="text" class="form-control" id="word" placeholder="Meaning in Kurdish"></textarea>
+                        </div>
+                        <div class="button-groups">
+                            <button class="btn info">I also know what Sorani means </button>
+                            <button class="btn primary">
+                                Synonyms exist
+                            </button>
+                            <button class="btn great">
+                                I can add an example sentence.
+                            </button>
+                            <button class="btn success">
+                                I confirm this
+                            </button>
+                        </div>
+                        <div class="form-group">
+                            <label for="meaning">Sorani Meaning</label>
+                            <input type="text" class="form-control" id="meaning" placeholder="Meaning">
+                        </div>
+                        <div class="form-group">
+                            <label for="example">Synonym 1</label>
+                            <input type="text" class="form-control" id="example" placeholder="Example">
+                        </div>
+                        <div class="form-group">
+                            <label for="example">Synonym 2</label>
+                            <input type="text" class="form-control" id="example" placeholder="Example">
+                        </div>
+                        <div class="form-group">
+                            <label for="example">Example Sentence</label>
+                            <input type="text" class="form-control" id="example" placeholder="Example">
+                        </div>
+
+                    </div>
+                    <div class="word-edit-footer">
+                        <button class="btn success">Save</button>
+                        <button class="btn danger">Report</button>
+                    </div>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+                integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+            <script src="/assets/js/bootstrap.min.js"></script>
+            <script src="/assets/js/main.js"></script>
+            <script></script>
 </body>
 
 </html>
