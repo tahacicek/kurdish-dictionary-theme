@@ -1,0 +1,33 @@
+/* Responsive */
+@media(max-width: 991px) {
+	.fixed.left-bar {
+		display: none;
+        transition: all 0.3s;
+	}
+
+    .fixed.left-bar.show-sidebar {
+        display: block;
+        transition: all 0.3s;
+    }
+
+    .word-edit-area  .word-edit .responsive-buttons {
+        display: block;
+    }
+
+	.word-edit-area {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.word-edit-area .word-edit .word-edit-body .word-edit-form .button-groups {
+		display: block;
+        align-items: center;
+        justify-content: center;
+	}
+
+    .word-edit-area .word-edit .word-edit-body .word-edit-form .button-groups .btn {
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
