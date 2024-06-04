@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Kurdish Glossary</title>
 </head>
-
 <body>
     <div class="container-app">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -254,7 +254,7 @@
             </div>
         </div>
         <div class="word-edit-area">
-            <div class="word-edit">
+            <div class="word-edit shadow-lg">
                 <!-- left bar toggle button -->
                 <div class="responsive-buttons">
                     <button class="toggle-btn">
@@ -296,39 +296,34 @@
                             <label for="word">Kurdish (Kurmanji)</label>
                             <textarea type="text" class="form-control" id="word" placeholder="Meaning in Kurdish"></textarea>
                         </div>
-                        <div class="button-groups">
-                            <button class="btn info">I also know what Sorani means </button>
-                            <button class="btn primary">
-                                Synonyms exist
-                            </button>
-                            <button class="btn great">
-                                I can add an example sentence.
-                            </button>
-                            <button class="btn success">
-                                I confirm this
-                            </button>
-                        </div>
-                        <div class="form-group">
-                            <label for="meaning">Sorani Meaning</label>
-                            <input type="text" class="form-control" id="meaning" placeholder="Meaning">
-                        </div>
-                        <div class="form-group">
-                            <label for="example">Synonym 1</label>
-                            <input type="text" class="form-control" id="example" placeholder="Example">
-                        </div>
-                        <div class="form-group">
-                            <label for="example">Synonym 2</label>
-                            <input type="text" class="form-control" id="example" placeholder="Example">
-                        </div>
-                        <div class="form-group">
-                            <label for="example">Example Sentence</label>
-                            <input type="text" class="form-control" id="example" placeholder="Example">
-                        </div>
-
                     </div>
                     <div class="word-edit-footer">
+                        <ul class="nav nav-pills me-auto" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab"
+                                    aria-controls="pills-home" aria-selected="true">Home</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">Profile</button>
+                            </li>
+                        </ul>
                         <button class="btn success">Save</button>
-                        <button class="btn danger">Report</button>
+                    </div>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab" tabindex="0">
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab" tabindex="0">
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="pills-disabled" role="tabpanel"
+                            aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
                     </div>
                 </div>
             </div>
@@ -601,6 +596,7 @@
                         aria-labelledby="pills-profile-tab" tabindex="0">...</div>
                 </div>
             </div>
+        </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>

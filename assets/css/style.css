@@ -409,8 +409,8 @@ body.dark-theme .navbar-brand:hover {
 	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
 	transition: width 0.3s;
 	border-right: 1px solid #e9ecef;
-	overflow-y: auto;
 }
+
 
 
 .fixed.left-bar.show-sidebar {
@@ -572,12 +572,26 @@ body.dark-theme .left-bar-content .search-bar input::placeholder {
 	color: var(--hover-color);
 }
 
-
 .word-edit-area {
 	margin-left: 300px;
 	margin-right: 300px;
 	padding-top: 7px;
+	overflow-y: auto;
 }
+
+.word-edit-area .word-edit{
+	overflow: auto;
+    max-height: 100vh;
+	border: 1px solid #e9ecef;
+	border-bottom: none;
+	border-bottom-left-radius: 5px;
+}
+
+body.dark-theme .word-edit-area .word-edit{
+	border: 1px solid #333;
+	border-bottom: none;
+}
+
 
 .word-edit-area  .word-edit .responsive-buttons {
 	display: none;
@@ -802,6 +816,51 @@ body.dark-theme .word-edit-area .word-edit .word-edit-body .word-edit-form .form
 	justify-content: flex-end;
 	gap: 10px;
 	margin-top: 20px;
+}
+
+
+
+.word-edit-footer .nav.nav-pills .nav-item button {
+	color: var(--primary-color) !important;
+	font-size: 10px;
+	font-weight: 400;
+	text-decoration: none;
+	border: none;
+	background-color: #f8f9fa;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 0px;
+}
+
+.word-edit-body .tab-content .tab-pane {
+	padding: 0;
+}
+
+
+
+body.dark-theme .word-edit-footer .nav.nav-pills .nav-item button {
+	color: #fff !important;
+	background-color: var(--dark-theme-card);
+}
+
+.word-edit-footer .nav.nav-pills .nav-item button:hover {
+	color: var(--hover-color);
+	background-color: #f8f9fa !important;
+}
+
+body.dark-theme .word-edit-footer .nav.nav-pills .nav-item button:hover {
+	color: var(--hover-color);
+	background-color: #333 !important;
+}
+
+.word-edit-footer .nav.nav-pills .nav-item button.active {
+	color: var(--hover-color);
+	background-color: #f8f9fa !important;
+}
+
+body.dark-theme .word-edit-footer .nav.nav-pills .nav-item button.active {
+	color: var(--hover-color);
+	background-color: #333 !important;
 }
 
 .word-edit-area .word-edit .word-edit-body .word-edit-footer .btn {
