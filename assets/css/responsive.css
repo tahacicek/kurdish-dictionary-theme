@@ -16,6 +16,7 @@
     .fixed.left-bar.show-sidebar {
         display: block;
         transition: all 0.3s;
+        overflow-y: auto;
     }
 
     .fixed.right-bar {
