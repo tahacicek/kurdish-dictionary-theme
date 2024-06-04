@@ -1,11 +1,29 @@
 /* Responsive */
 @media(max-width: 991px) {
+
+    body{
+        overflow-x: hidden;
+        height: 100%;
+        overflow-y: auto;
+    }
+
+
 	.fixed.left-bar {
 		display: none;
         transition: all 0.3s;
 	}
 
     .fixed.left-bar.show-sidebar {
+        display: block;
+        transition: all 0.3s;
+    }
+
+    .fixed.right-bar {
+        display: none;
+        transition: all 0.3s;
+    }
+
+    .fixed.right-bar.show-sidebar {
         display: block;
         transition: all 0.3s;
     }

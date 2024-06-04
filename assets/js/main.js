@@ -20,15 +20,22 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
+
+
     const leftBarButton = document.querySelector('.toggle-btn');
     const sidebar = document.querySelector('.left-bar');
+    const body = document.querySelector('body');
 
     leftBarButton.addEventListener('click', function () {
         if (sidebar.classList.contains('show-sidebar')) {
             sidebar.classList.remove('show-sidebar');
+
         } else {
             sidebar.classList.add('show-sidebar');
+
         }
     });
 
@@ -36,8 +43,41 @@ document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('click', function (e) {
         if (!sidebar.contains(e.target) && e.target !== leftBarButton) {
             sidebar.classList.remove('show-sidebar');
+
         }
     });
 
-});
+    // toggle-btn-right
+    const rightBarButton = document.querySelector('.toggle-btn-right');
+    const rightSidebar = document.querySelector('.right-bar');
 
+
+    rightBarButton.addEventListener('click', function () {
+        if (rightSidebar.classList.contains('show-sidebar')) {
+            rightSidebar.classList.remove('show-sidebar');
+
+        } else {
+            rightSidebar.classList.add('show-sidebar');
+
+        }
+    });
+
+    // dışarı tıklandığında sidebar kapanacak
+    document.addEventListener('click', function (e) {
+        if (!rightSidebar.contains(e.target) && e.target !== rightBarButton) {
+            rightSidebar.classList.remove('show-sidebar');
+
+        }
+    });
+
+    // eğer barlar açıksa body'ye hidden classı ekle
+    document.addEventListener('click', function (e) {
+        if (sidebar.classList.contains('show-sidebar') || rightSidebar.classList.contains('show-sidebar')) {
+            body.classList.add('hidden');
+        } else {
+            body.classList.remove('hidden');
+        }
+    });
+
+
+});
