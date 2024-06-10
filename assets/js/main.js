@@ -80,4 +80,29 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
+
+    // user-reply-button add class user-reply-form.active
+    const userReplyButton = document.querySelector('.user-reply-button');
+    const userReplyForm = document.querySelector('.user-reply-form');
+
+    userReplyButton.addEventListener('click', function () {
+        userReplyForm.classList.toggle('active');
+    });
+
+    // user-reply-button add class user-reply-form.active
+
+
 });
+
+// document.addEventListener(
+//     "click",
+//     function(event) {
+//         var target = event.target;
+//         var replyForm;
+//         if (target.matches("[data-toggle='reply-form']")) {
+//             replyForm = document.getElementById(target.getAttribute("data-target"));
+//             replyForm.classList.toggle("d-none");
+//         }
+//     },
+//     false
+// );
